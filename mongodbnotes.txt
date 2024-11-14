@@ -1,0 +1,47 @@
+
+-what is db
+-what is dbms
+-what is rdbms
+-what is sql-based dbms
+-what is schema 
+-what is keys,fields,rows,entities
+-what is primary key
+-what is entity-relation ship
+
+
+MONGODB:-
+=========
+
+-what is mongodb: its a no-sql non-relational dbms
+->features of mongodb:
+-no-sql
+-no entity relationships
+-every entities stored in mongodb will be independent of each other
+-can handle larger amount of data easily
+-schemaless
+-data stored in json-document format
+-data stored as BSON(Binary-JSON) data
+-indexing
+-rich-query language
+-replication
+
+-difference b/w mongodb and mysql
+
+
+MYSQL         MongoDB
+-DATABASE     -DATABASE
+-TABLE        -COLLECTION
+-ROW/Tuple/   -Document
+    entity
+-Column/      -Field
+ Keys/attributes
+ /fields
+
+-Primary Key  -ObjectID
+
+
+->Queries:
+
+-to create a new db/to choose an existing db = use <db-name>
+-to list collections  = show collections
+-to create collection = db.createCollectrion("<collection-name>")

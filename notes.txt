@@ -1,0 +1,95 @@
+Node.js:
+-----------
+-js runtime environment
+-js modules:
+    import : require('path')
+    export : module.exports,exports
+
+
+    - fs :File system to handle files in js 
+    - http
+    - url
+    - nodemailer
+
+node_modules : directory which keep copies of packages for use in local directory
+package.json : node_modules configuration file
+package_lock.json : node_modules packages informations
+
+->EventEmitter() : node.js class for creating events
+
+->Process object in Node.js:-
+
+->env variables:values thatb affect a running process in node.js
+-it will be stored in .env file of node.js apps
+-'dotenv' package is used for accessing such variable sin node.js
+
+
+->Framework:
+    -express.js - for developing rest api servers
+
+REST - Representational State Transfer
+SOAP
+FAST
+
+
+=>CORS:Cross Origin Resource Sharing
+------------------------------------
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins
+ (domain, scheme, or port) other than its own from which a browser should permit loading resources
+
+ npm i cors
+
+
+=>Architecture:
+----------------
+
+-MVC : Model-View-Controller
+MVT
+MVVM
+
+->nodemon:
+node.js command tool which give ability to re-render/re-compiler program in runtime while code changes in realtime
+npm i -g nodemon
+
+->mongoose:
+-a node.js library which act as an object-model tool
+-helps in connection,data validation etc
+-object-models/models are simply schemas which helps in data validation
+
+
+=>JWT(JSON Web Token):-
+----------------------------
+
+-authentication mechanism used for secure implementation of
+ user verification
+-creates a random character set(called token/signature) 
+ while user logging into the system,and verifies when further
+ requests are made by user after authentication
+-jsonwebtoken is a third party package used with node.js for jwt
+ authentication
+-sign() method for token generation, and
+ verify() method for token verification
+-sign(payload,secret/public_key) = payload is a piece of data that
+    used to embed in token(a piece of data that specifies user)
+ verify(token,secret/public_key) = token will be the given token
+ value to user
+ secret/public key is simply a string that used to sign and 
+ verify same tokens
+-npm i jsonwebtoken
+
+
+Middleware:
+------------
+-special function that can access and act b/w client and server before the request hits on serverside
+-
+
+const middleware=(req,res,next)=>{
+    next()
+}
+
+-Application level middleware
+->middleware that implemented into an entire server
+ex;cors(),json()
+-Router level middleware
+->middleware implemented into a specific route only
+-addproject
